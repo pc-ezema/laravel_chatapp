@@ -18,7 +18,7 @@ class MessageComment extends Model
         return $this->belongsTo(Message::class, 'id','message_id');
     }
 
-     public function user() {
+    public function user() {
         return $this->belongsTo(User::class, 'user_id','id');
     }
 }
